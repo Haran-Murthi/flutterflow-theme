@@ -14,7 +14,7 @@ app.add_middleware(
     allow_origins=["*"],  # Replace with specific domain in production
     allow_methods=["*"],
     allow_headers=["*"],
-)`
+)
 
 @app.post("/upload-theme/")
 async def upload_theme_file(file: UploadFile = File(...)):
